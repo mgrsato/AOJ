@@ -50,7 +50,7 @@
         $db_number_total[$i] = $row['number_total'];
         $db_number_miss[$i] = $row['number_miss'];
         $db_time_required[$i] = $row['time_required'];
-
+        
         $i = $i + 1;
     }
 
@@ -136,7 +136,7 @@
         </tr>
     </table>
     <br />
-    <input style='width: 90px; height: 24px;' type="button" onclick="location.href='view_chart.php?name=<?php print($db_name[0]); ?>'" value="chart" />
+    <input style='width: 90px; height: 24px;' type="button" onclick="location.href='view_chart_wide.php?name=<?php print($db_name[0]); ?>&offset=0'" value="chart" />
     </div>
 </BODY>
 </HTML>
